@@ -1,0 +1,30 @@
+body {
+    background-image: url('src/murmansk.jpg'); /* Используем изображение в качестве фона */
+    background-size: cover; /* Изображение растягивается, чтобы покрыть весь экран */
+    background-repeat: no-repeat; /* Фон не повторяется */
+    background-attachment: fixed; /* Фон фиксирован */
+    background-position: center; /* Центрируем фон */
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.image-container img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.image-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
